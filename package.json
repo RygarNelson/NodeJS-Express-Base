@@ -1,0 +1,27 @@
+{
+  "name": "base-nodejs-express-server",
+  "version": "0.0.1",
+  "description": "Base Server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "nodemon server.js"
+  },
+  "keywords": [
+    "server"
+  ],
+  "author": "Daniele Moscati",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.6.3",
+    "npm": "^7.21.1"
+  },
+  "devDependencies": {}
+}
