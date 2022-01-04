@@ -25,6 +25,7 @@
     "nodemailer": "^6.7.2",
     "nodemon": "^2.0.15",
     "npm": "^8.3.0",
+    "pg": "^8.7.1",
     "rotating-file-stream": "^3.0.2"
   },
   "devDependencies": {}
