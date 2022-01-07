@@ -1,6 +1,8 @@
 # NodeJS Express Base
 This repository contains a prebuilt NodeJS and ExpressJS backend server, with multiple functionalities already been implemented. You can simply download the project and start working on your REST API server.
+
 This project has been created with the purpose to give everyone a hassle-free, pre-built configuration of a typical NodeJS + ExpressJS installation.
+
 This project aims to be as compact as possible, so it can be used as a single, large server or as a part of multiple microservices.
 
 ## Functionalities
@@ -36,18 +38,21 @@ This project aims to be as compact as possible, so it can be used as a single, l
 
 ## Structure
 
-- Every configuration variable should be put inside the *.env* file in the root folder. ** *REMEMBER TO IMMEDIATELY PUT THE FILE INSIDE .gitignore, OTHERWISE YOUR SENSIBLE INFORMATION COULD BE EXPOSED* **
-- All configuration files should be put inside *src/config*. You can already find some examples
-- All middlewares should be put inside *src/middleware*. You can already find an example
-- *src/methods* is a folder used to store common functions
-- Routes should be placed inside *src/routes*. Then they must be declared inside the *src/app.js* file. You can already find some examples
+- Every configuration variable should be put inside the *.env* file in the root folder. 
+> ***REMEMBER TO IMMEDIATELY PUT THE FILE INSIDE .gitignore, OTHERWISE YOUR SENSIBLE INFORMATION COULD BE EXPOSED***
+- All configuration files should be put inside *src/config*. You can already find some examples inside the folder
+- All middlewares should be put inside *src/middleware*. You can already find an example inside the folder
+- *src/methods* is a folder used to store common functions. You can already find some examples inside the folder
+- Routes should be placed inside *src/routes*. Then they must be declared inside the *src/app.js* file. You can already find some examples inside the folder
 - *src/app.js* is the main file and contains everything for the server to function properly
 - *src/db.js* contains all the necessary information to connect to a database
 
 ## Future Work
 
 - Extend the database support for Oracle and MongoDB
+- Support for extended logging via Winston
 - Support for anti-tampering of log files
-- Support for logging of errors
 - SMS module
 - Socket module, for live interaction
+- Add scalability
+- Explanation of all the configuration variables inside the *.env* file
