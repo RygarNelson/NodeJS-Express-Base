@@ -1,13 +1,14 @@
 'use strict'
 
-const express = require('express')
+const express = require('express');
 
-const router = express.Router()
+const router = express.Router();
 
-const authMethods = require('../methods/authMethods')
+const authMethods = require('../methods/authMethods');
 
-const standardCallback = require('../methods/standardCallback')
-const { connection } = require('../db')
+const standardCallback = require('../methods/standardCallback');
+
+const connection = require('../db');
 
 router.post('/login', async (req, res) => {
     
