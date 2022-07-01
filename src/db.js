@@ -18,8 +18,8 @@ async function checkConnection() {
     try {
         connection.authenticate().then(() => {
             // Import database models
-            fs.readdirSync(path.join(__dirname, '..', 'models')).forEach(file => {
-                var model = connection.import(path.join(__dirname, '..', 'models', file));
+            fs.readdirSync(path.join(__dirname, '..', 'src', 'models')).forEach(file => {
+                var model = connection.import(path.join(__dirname, '..', 'src', 'models', file));
                 db[model.name] = model;
             });
     
